@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".DetailInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="393dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream4"
+                android:text="구리시종합복지관"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream4"
+                android:text="일본어"
+                android:textSize="18dp" />
+
+            <!-- 버튼 모양 하트로 변경하기 -->
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="120dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/japaneseclass"
+            android:layout_width="310dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            app:srcCompat="@drawable/study" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/scdream5"
+            android:text="일본어 수업(초급)"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[강좌 소개]"
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream5"/>
+
+            <TextView
+                android:id="@+id/classExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="누구나 쉽게 배울 수 있는 일본어 초급 강좌입니다."
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[강사명]"
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream5"/>
+
+            <TextView
+                android:id="@+id/classTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최재훈(구리시종합복지관)"
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[기간/시간]"
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream5"/>
+
+            <TextView
+                android:id="@+id/classTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scdream4"
+                android:text="2021.06.10 ~ 06.28 매주 목요일 "
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[정원]"
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream5"/>
+
+            <TextView
+                android:id="@+id/classPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 / 20 명"
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[신청 마감일]"
+                android:textSize="18dp"
+                android:fontFamily="@font/scdream5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/classDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream4"
+                    android:text="2021.06.03 [금]"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/corner"
+                    android:text="마감 6일 전"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="신청"
+                android:background="@drawable/btn_gra_under"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/returnButton"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/recommend_design"
+                android:text="목록으로 돌아가기"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="내 수업일정"
+        android:background="@drawable/underbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button16"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="107dp"
+        android:layout_height="70dp"
+        android:text="Home"
+        android:background="@drawable/underbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="내 정보"
+        android:background="@drawable/underbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button16" />
+</androidx.constraintlayout.widget.ConstraintLayout>

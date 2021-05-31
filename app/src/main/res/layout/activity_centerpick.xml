@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCF6"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Centerpick">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <TextView
+        android:id="@+id/centerpick"
+        android:fontFamily="@font/scdream5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="내 복지관 찾기"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tv_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시 · 도 ▽"
+        android:fontFamily="@font/scdream5"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/sp_parent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/centerpick_design" />
+
+    <TextView
+        android:id="@+id/tv_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="시 · 군 · 구 ▽"
+        android:fontFamily="@font/scdream5"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/sp_child"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/centerpick_design" />
+
+    <Button
+        android:id="@+id/my_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/scdream4"
+        android:background="@drawable/btn_gra"
+        android:text="확인"
+        android:textSize="30dp" />
+
+</LinearLayout>

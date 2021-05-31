@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCF6"
+    android:backgroundTint="#850B0B"
+    tools:context=".Recommendation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:background="#FCFCF6"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FCFCF6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="최재훈"
+                    android:fontFamily="@font/scdream5"
+                    android:textColor="#000000"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream4"
+                    android:text="님을 위한 강좌 추천"
+                    android:textColor="#000000"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="원하는 수업을 담아보세요!"
+                android:textColor="#000000"
+                android:fontFamily="@font/scdream4"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/recommend_design">
+
+            <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_layout"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="음악"
+                android:textColor="#FF9800"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/scdream5"
+                android:text="노래 교실"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+
+            <!-- 버튼 모양 하트로 변경하기 -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recommend_design">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_layout"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="미술"
+                android:textColor="#FF9800"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/scdream5"
+                android:text="수묵화 완성하기"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <!-- 버튼 모양 하트로 변경하기 -->
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recommend_design">
+
+            <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_layout"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="언어"
+                android:textColor="#FF9800"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/scdream5"
+                android:text="일본어 초급"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+
+            <!-- 버튼 모양 하트로 변경하기 -->
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/allclass"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_gra"
+            android:fontFamily="@font/scdream5"
+            android:text="강좌 전체 보기"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="내 수업일정"
+        android:background="@drawable/underbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button16"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="107dp"
+        android:layout_height="70dp"
+        android:text="Home"
+        android:background="@drawable/underbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="내 정보"
+        android:fontFamily="@font/scdream5"
+        android:textColor="@color/black"
+        android:background="@drawable/underbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

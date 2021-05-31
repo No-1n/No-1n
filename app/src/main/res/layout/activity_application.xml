@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/scdream5"
+        app:iconifiedByDefault="false"
+        app:queryHint="강좌명을 입력하세요" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/scdream5" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="282dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/tabPop1"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#FFC107"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="317dp"
+                        android:layout_height="57dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:fontFamily="@font/scdream5"
+                        android:text="마감 13일전"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_toast1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/scdream5"
+                        android:text="추가"
+                        android:theme="@style/AppTheme.BlueRipple" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="일본어 수업(초급)"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream4"
+                    android:text="2021.06.10~06.28"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/t1111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream4"
+                    android:text="매주 목 오후 6시"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="세부정보" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/tabPop2"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#CDDC39"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="317dp"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/scdream5"
+                        android:layout_marginLeft="10dp"
+                        android:text="마감 22일전"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/btn_toast2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/scdream5"
+                        android:text="추가"
+                        android:theme="@style/AppTheme.BlueRipple" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="노래교실"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="2021.06.19~07.02"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/t2222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="매주 수 오후 6시"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/button21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="세부정보" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabPop3"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#00BCD4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="317dp"
+                        android:layout_height="57dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/scdream5"
+                        android:layout_marginLeft="10dp"
+                        android:text="마감 6일전" />
+
+                    <Button
+                        android:id="@+id/btn_toast3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/scdream5"
+                        android:text="추가"
+                        android:theme="@style/AppTheme.BlueRipple" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="명심보감"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="2021.06.03~07.03"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/t3333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="매주 일 오전 11시"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="세부정보" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabPop4"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@color/purple_200"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="317dp"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/scdream5"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="마감 25일전" />
+
+                    <Button
+                        android:id="@+id/btn_toast4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/scdream5"
+                        android:text="추가"
+                        android:theme="@style/AppTheme.BlueRipple" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/t44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="실버태권도"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t444"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="2021.06.22~07.14"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/t4444"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="매주 토 오후 3시"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/scdream5"
+                    android:text="세부정보" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_gra"
+            android:fontFamily="@font/scdream5"
+            android:text="신청" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="115dp">
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="151dp"
+                android:layout_height="70dp"
+                android:background="@drawable/underbar"
+                android:text="내 수업일정"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button16"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="107dp"
+                android:layout_height="70dp"
+                android:background="@drawable/underbar"
+                android:text="Home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="155dp"
+                android:layout_height="70dp"
+                android:background="@drawable/underbar"
+                android:text="내 정보"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TabHost>

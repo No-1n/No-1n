@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyInformation"
+    android:background="#FCFCF6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <!-- 사용자 이름 -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="재훈"
+                android:fontFamily="@font/scdream5"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="님"
+                android:fontFamily="@font/scdream4"
+                android:textSize="24dp" />
+
+            <!-- 가장 최근 들은 수업 이름 -->
+            <TextView
+                android:id="@+id/recentClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ~~~"
+                android:fontFamily="@font/scdream4"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scdream4"
+                android:text=" 수업은 어떠셨나요?"
+                android:textSize="24dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="회원정보 수정(계정 관리)"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="내 복지관 수정"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/alarm_setting"
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="알림 설정"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="공지사항"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="고객센터"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/log_out"
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/time_shadow"
+                android:fontFamily="@font/scdream5"
+                android:gravity="center"
+                android:text="로그아웃"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
